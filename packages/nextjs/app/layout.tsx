@@ -4,9 +4,9 @@ import { ScaffoldEthAppWithProviders } from "~~/components/ScaffoldEthAppWithPro
 import { ThemeProvider } from "~~/components/ThemeProvider";
 import "~~/styles/globals.css";
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : `http://localhost:${process.env.PORT || 3000}`;
+const baseUrl = process.env.vercel_url
+  ? `https://${process.env.vercel_url}`
+  : `http://localhost:${process.env.port || 3000}`;
 const imageUrl = `${baseUrl}/thumbnail.jpg`;
 
 const title = "Scaffold-ETH 2 App";
